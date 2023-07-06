@@ -1,7 +1,7 @@
 # flask-weather-api
 This is Flask framwork Api to get shipment data and Weather report of shipment Pin Code
 
-## How to setup the project to run Locall
+## How to setup project in Locall
 1. Clone The Repo
 2. Setup Flask if not locally by following steps > https://flask.palletsprojects.com/en/2.3.x/installation/
 3. run the command to start flask in localhost from project dir
@@ -26,10 +26,14 @@ Search shipment by carreer
 
 Some dummy shipment data saved in `data.txt` for testing purpose
 
+## Weather Api
 
-1. Weather Data by API:- I used https://www.visualcrossing.com/ api to get weather information of particular shipment by pincode.
-2. Every time we do a call to api, I save weather data to json file with two hours advance time in file with pincode name
-3. Next time if we got request for same pincode first I check in dir if pincode file exist and data is still not in 2 hr timeframe to return data from file or if not do the call again to weather api.
+1. I used https://www.visualcrossing.com/ api to get weather information of particular shipment by pincode.
+2. Every time we do a call to api, I save weather data to json file with two hours advance time in file with pincode name.
+3. Next time if we recieve  request for same pincode, first I check in directory if pincode file exist and data is still valid for 2 hours we return data from file or not again do the call to api service.
 
-4. Testing- There are unit test cases fro both classes in test directory and you can excecute by running command
+   
+# Testing 
+  There are unit test cases for both classes in test directory and you can excecute by running command
+  
    `python -m unittest discover -s test -p "*_test.py"` 
