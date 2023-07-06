@@ -6,8 +6,9 @@ This is Flask framwork Api to get shipment data and Weather report of shipment P
 2. Setup Flask if not locally by following steps > https://flask.palletsprojects.com/en/2.3.x/installation/
 3. run the command to start flask in localhost from project dir
 
-```$ flask --app index run or Debug mode flask --app index run --debug
- * Serving Flask app 'hello'
+```$
+ flask --app index run or Debug mode flask --app index run --debug
+ * Serving Flask app 'index'
  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
 ```
 
